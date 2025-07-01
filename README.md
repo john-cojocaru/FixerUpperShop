@@ -86,9 +86,9 @@ FixerUpperShop/
     - Update the **port=3308** to match your MySQL port shown in XAMPP
     
     ❗ Failing to match the correct port will result in errors like:
-      - **_ SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it_**
+        **_ SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it_**
 
-5. **Check Port in XAMPP**
+6. **Check Port in XAMPP**
    - XAMPP may assign a non-standard port (e.g. `localhost:8080`)
    - To find the port:
      - Open XAMPP Control Panel
