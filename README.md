@@ -76,18 +76,7 @@ FixerUpperShop/
    - Make sure PHP 7.4+ is enabled
    - Start **Apache** and **MySQL**
 
-4. **MySQL Port (Database Connection)**
-    To find and configure the correct MySQL port:
-    - In **XAMPP Control Panel**, check the **MySQL** module port number (usually 3306 or 3308)
-    - In your project, open `/includes/db.php`
-    - Locate the PDO connection line:
-      `$pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);`
-    - Update the **port=3308** to match your MySQL port shown in XAMPP
-    
-    ❗ Failing to match the correct port will result in errors like:
-        **_ SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it_**
-
-6. **Check Port in XAMPP**
+4. **Check Port in XAMPP**
    - XAMPP may assign a non-standard port (e.g. `localhost:8080`)
    - To find the port:
      - Open XAMPP Control Panel
@@ -97,6 +86,23 @@ FixerUpperShop/
      ```
      http://localhost:[your-port]/FixerUpperShop/index.php
      ```
+
+#### ✅ MySQL Port (Database Connection)
+
+XAMPP may also assign a **non-default MySQL port** (e.g., `3306`, `3308`, etc.), which must match the settings in your project.
+
+To check and configure this:
+1. Open **XAMPP Control Panel**
+2. Check the port listed next to **MySQL** (e.g., 3306 or 3308)
+3. Open the project file `/includes/db.php`
+4. Find the database connection string:
+   ```php
+   $pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);
+   ```
+5. Change `port=3308` to match your XAMPP MySQL port
+
+⚠️ If the port is incorrect, you may see connection errors like:
+`SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it`
 
 ---
 
