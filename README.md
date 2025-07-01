@@ -21,7 +21,7 @@ This project is a secure prototype e-commerce website developed for **FixerUpper
 
 ---
 
-## 🔐 Security Measures (LO4)
+## 🔐 Security Measures
 
 | Threat               | Mitigation Strategy                                       |
 |----------------------|-----------------------------------------------------------|
