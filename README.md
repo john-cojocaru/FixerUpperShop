@@ -78,15 +78,15 @@ FixerUpperShop/
 
 4. **MySQL Port (Database Connection)**
     To find and configure the correct MySQL port:
-    - In XAMPP Control Panel, check the MySQL module port number (usually 3306 or 3308)
+    - In **XAMPP Control Panel**, check the **MySQL** module port number (usually 3306 or 3308)
     - In your project, open
-           _/includes/db.php_
+           **_/includes/db.php_**
     - Locate the PDO connection line:
-           _$pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);_
-    - Update the port=3308 to match your MySQL port shown in XAMPP
+           **_$pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);_**
+    - Update the **port=3308** to match your MySQL port shown in XAMPP
     
     ❗ Failing to match the correct port will result in errors like:
-          _ SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it_
+          **_ SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it_**
 
 5. **Check Port in XAMPP**
    - XAMPP may assign a non-standard port (e.g. `localhost:8080`)
