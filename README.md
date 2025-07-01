@@ -81,7 +81,7 @@ FixerUpperShop/
     - In **XAMPP Control Panel**, check the **MySQL** module port number (usually 3306 or 3308)
     - In your project, open `/includes/db.php`
     - Locate the PDO connection line:
-      - **_$pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);_**
+      `$pdo = new PDO("mysql:host=localhost;port=3308;dbname=shoppingcart", ...);`
     - Update the **port=3308** to match your MySQL port shown in XAMPP
     
     ❗ Failing to match the correct port will result in errors like:
