@@ -107,7 +107,7 @@ Example UI screenshots included:
 - 🔐 Login and Register pages  
 - 🚪 Logout confirmation
 
-Screenshots located in repository
+Screenshots located in /img folder of the repository
 ---
 
 ## 👨‍💻 Author
