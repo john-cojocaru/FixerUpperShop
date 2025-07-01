@@ -1,0 +1,170 @@
+/* Dark Background & Font */
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Logo Section */
+.logo-container img {
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Cart Link */
+a {
+    color: #90caf9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Product Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+.product-card:hover {
+    transform: scale(1.02);
+}
+.product-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.product-card h3 {
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+.product-card p {
+    color: #bbbbbb;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+.product-card strong {
+    color: #76ff03;
+    font-size: 1.1rem;
+}
+.product-card button {
+    margin-top: 10px;
+    background-color: #2979ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.product-card button:hover {
+    background-color: #5393ff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form button {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #2979ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5393ff;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    background-color: #2979ff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #5393ff;
+}
+
+.logout-button {
+    background-color: #ffffff;
+    color: #121212;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #eeeeee;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2979ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #5393ff;
+}
+
+.inline-button {
+    display: inline-block;
+    font-size: 1rem;
+}
