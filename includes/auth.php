@@ -2,7 +2,7 @@
 
 
 // ✅ Secure session cookie parameters
-$secure = false; // Set to true if using HTTPS + SSL Certificate
+$secure = true; // Set to true if using HTTPS + SSL Certificate
 $httponly = true;
 session_set_cookie_params([
     'lifetime' => 3600,
