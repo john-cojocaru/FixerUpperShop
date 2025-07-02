@@ -7,6 +7,9 @@ $message = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = sanitize($_POST['username']);
     $email = sanitize($_POST['email']);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $message = "✖ Invalid email format.";
+    }
     $password = $_POST['password'];
 
     if (!empty($username) && !empty($password) && !empty($email)) {
