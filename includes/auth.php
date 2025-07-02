@@ -19,14 +19,14 @@ $timeout = 1200;
 if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > $timeout)) {
     session_unset();
     session_destroy();
-    header("Location: /FixerUpperShop/login.php");
+    header("Location: /login.php");
     exit;
 }
 $_SESSION['LAST_ACTIVITY'] = time();
 
 // ✅ Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header("Location: /FixerUpperShop/login.php");
+    header("Location: /login.php");
     exit;
 }
 ?>
