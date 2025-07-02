@@ -9,8 +9,8 @@ This project is a secure prototype e-commerce website developed for **FixerUpper
 
 ## 📦 Features
 
-- 🔐 Secure user registration and login system (with password hashing)
-- 🛒 Product listing with images and category-based management
+- 🔐 Secure user registration and login system (with password hashing and verification)
+- 🛒 Product listing with images, description and prices
 - 🧺 Shopping cart (add, update quantity, remove items)
 - ✅ Checkout process with authentication
 - 📦 Order confirmation and user order history
